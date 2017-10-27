@@ -1,0 +1,15 @@
+body
+{
+	background-image:url(theme2.png);
+}
+footer
+{
+	padding: 1em;
+	background-color: gray;
+	color: black;
+	text-align: center;
+	right: 0;
+ 	bottom: 0;
+  	left: 0;
+	position: absolute;
+}
