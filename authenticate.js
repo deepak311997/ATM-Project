@@ -9,7 +9,7 @@ function auth()
 	}
 	else
 	{
-		//alert("Invalid Account no or ATM pin !!!");
+		alert("Invalid Account no or ATM pin !!!");
 		window.location="atm2.php";
 	}
 }
