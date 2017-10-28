@@ -26,11 +26,7 @@ button[type=submit]
   <label>Enter ATM Pin:</label><br>
  <input name="password" id="atm_pin" type="password" placeholder="Enter ATM Pin" >
   <br><br>
-<<<<<<< HEAD
-<input type="submit" name="Login" onclick="auth() ">
-=======
 <button type="submit" onclick="auth() " value="Login" >Login</button>
->>>>>>> 95cc382d6066b5cd5ca4c1c6100a04da5124357e
 <p><b>Account No:admin<br>ATM Pin:1234</b></p>
 </form>
 </div>
