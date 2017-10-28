@@ -4,7 +4,7 @@
 <head>
 	<title>OPTIONS</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 input[type=submit]
@@ -16,11 +16,10 @@ input[type=submit]
 </style>
 </head>
 <body>
-	
+<div class="box" align="center">	
 <img src="logo.png" alt="State Bank of India" width=800px height=150px>
 <br>
 <br>
-<div class="box" align="center">
 <h4>Select any one from the options below</h4>
 <form action="atmactw.php">
 <input type="submit" value="   Withdraw Cash  ">
