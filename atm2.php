@@ -18,7 +18,7 @@ button[type=submit]
 <img src="logo.png" width=800px height=150px></body>
 <br>
 <br>
-<form class="box" action="atm3a.php" >
+<form class="box">
 <label>Enter Account Number:</label><br>
   <input id="acc_no" type="text" placeholder="Enter Account number" >
   <br>

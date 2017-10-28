@@ -1,4 +1,4 @@
-<!authentication successful>
+<!--authentication successful-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,15 +10,14 @@
 input[type=submit]
 {
 	background-color:gray;
-	width: 20%;
+	width: 17%;
 	color: white;
 }
 </style>
 </head>
 <body>
-	<div align="center">
+	
 <img src="logo.png" alt="State Bank of India" width=800px height=150px>
-</div>
 <br>
 <br>
 <div class="box" align="center">

@@ -1,4 +1,4 @@
-<!change pin code>
+<!--change pin code-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +16,7 @@ input[type=submit]
 </style>
 </head>
 <script>
-	function auth()
+	function auth1()
 	{
 		alert("Pin Code has been Successfully Changed");
 	}
@@ -36,7 +36,7 @@ input[type=submit]
 	Re-Enter New PIN : <input type="password" name="Re-Enter New PIN" placeholder="Re-Enter PIN">
 	<br>
 	<br>
-	<input type="submit" value="Confirm PIN change" onclick="auth()">
+	<input type="submit" value="Confirm PIN change" onclick="auth1()">
 	<br>
 	<br>
 </form>
