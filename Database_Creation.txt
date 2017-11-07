@@ -1,0 +1,18 @@
+- Create a database named "atm" with username and password default of xampp which is username:"root" password:""(no password)
+
+-Creation of tables
+
+	CREATE table banks(b_id integer primary key,b_name varchar(20),b_location varchar(20));
+	create table atm(a_id integer primary key,a_location varchar(20));
+	CREATE TABLE customer(c_id integer,b_id integer references banks(b_id) on delete cascade,c_fname varchar(20),c_lname varchar(20),c_address varchar(30),c_mob integer,PRIMARY key(c_id,b_id));
+	create table account_details(c_id integer references customer(c_id) on delete cascade,acc_no integer,atm_pin integer,primary key(acc_no,c_id));
+	create table current_account(c_id integer primary key references customer(c_id) on delete cascade,current_balance integer);
+	create table saving_account(c_id integer primary key references customer(c_id) on delete cascade,saving_balance integer);
+	create table transaction(t_id integer,c_id integer references customer(c_id) on delete cascade,t_type varchar(10),primary key(t_id,c_id));
+
+-Insertion of Data 
+	
+	
+
+	
+	
