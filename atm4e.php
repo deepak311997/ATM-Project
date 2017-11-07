@@ -4,7 +4,6 @@
 <head>
 	<title>Change Pin</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
-	<!link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 input[type=submit]
@@ -26,7 +25,7 @@ input[type=submit]
 <img src="logo.png" alt="State Bank of India" width=800px height=150px>
 <br>
 <br>
-<form action="atm1.php" class="box" >
+<form action="index.php">
 	Enter Current PIN: <input  type="password" name="Old PIN" placeholder="Old PIN">
 	<br>
 	<br>

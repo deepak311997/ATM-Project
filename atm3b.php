@@ -4,7 +4,6 @@
 <head>
 	<title>Authentication Failed</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
-	<!link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 input[type=submit]
@@ -24,7 +23,7 @@ h{
 <br>
 <br>
 </div>
-<div class="box" align="centers">
+<div class="box" align="center">
 <h3 align="center">Authentication Failed!!</h3>
 <br>
 <p align="center">Sorry your Account No. or ATM Pin does not match our records.<br> Please go back and re-enter your account details properly!</p>

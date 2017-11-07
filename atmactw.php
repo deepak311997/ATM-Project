@@ -3,7 +3,6 @@
 <head>
 	<title>Account Type</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
-	<!link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 input[type=submit]
