@@ -34,7 +34,7 @@ button {
   <br>
   <br>
   <!input type="submit" value="Deposit" onclick="IDGeneratordep(100000,999999)">
-  <button type="submit" value="Deposit" onclick="IDGeneratorwith(100000,999999)">Deposit</button>
+  <button type="submit" value="Deposit" onclick="IDGeneratordep(100000,999999)">Deposit</button>
   <br>
   <br>
  </form> 
