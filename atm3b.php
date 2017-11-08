@@ -16,6 +16,12 @@ input[type=submit]
 h{
 	font-family: verdana;
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
 </style>
 </head>
 <body>
@@ -29,7 +35,8 @@ h{
 <br>
 <p align="center">Sorry your Account No. or ATM Pin does not match our records.<br> Please go back and re-enter your account details properly!</p>
 <form action="atm2.php">
-<input type="submit" value="Click here to go back ">
+<!input type="submit" value="Click here to go back ">
+<button type="submit">Click Here to go back</button>
 <br>
 </div>
 </body>

@@ -12,6 +12,13 @@ input[type=submit]
 	width: 15%;
 	color: white;
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
+
 </style>
 </head>
 <body>
@@ -21,12 +28,14 @@ input[type=submit]
 <br>
 <h1 align="center">Select Account Type </h1>
 <form action="atm4a.php">
-<input type="submit" value="   Savings Account  ">
+<!input type="submit" value="   Savings Account  ">
+<button type="submit" name="Savings">Savings Account</button>
 <br>
 <br>
 </form>
 <form action="atm4a.php">
-<input type="submit" value="    Current Account    ">
+<!input type="submit" value="    Current Account    ">
+<button type="submit" name="Current">Current Account</button>
 <br>
 <br>
 </form>

@@ -6,11 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-button[type=submit]
+button
 {
-	background-color:gray;
-	width: 15%;
-	color: white;
+	font-weight: bold;
+	width: 07em;
+	height: 2em;
+	color: #000000;
 }
 </style>
 </head>
@@ -27,7 +28,8 @@ button[type=submit]
   <label>Enter ATM Pin:</label><br>
  <input name="password" type="password" placeholder="Enter ATM Pin" >
   <br><br>
-<input type="submit" value="Login">
+<!input type="submit" value="Login">
+<button type="submit">Login</button>
 <p><b>Account No:admin<br>ATM Pin:1234</b></p>
 </form>
 </div>

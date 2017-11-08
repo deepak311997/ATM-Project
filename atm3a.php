@@ -14,6 +14,12 @@ input[type=submit]
 	width: 13em;
 	height: 2em;
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
 </style>
 </head>
 <body>
@@ -23,23 +29,28 @@ input[type=submit]
 <br>
 <h4>Select any one from the options below</h4>
 <form action="atmactw.php">
-<input type="submit" value="Withdraw Cash" >
+<!input type="submit" value="Withdraw Cash" >
+<button type="submit" name="Withdraw">Withdraw Cash</button>
 <br><br>
 </form>
 <form action="atmactd.php">
-<input type="submit" value="   Deposit Cash   " >
+<!input type="submit" value="   Deposit Cash   " >
+<button type="submit" name="Deposit">Deposit Cash</button>
 <br><br>
 </form>
 <form action="atm4c.php">
-<input type="submit" value="  Enquire Balance   " >
+<!input type="submit" value="  Enquire Balance   " >
+<button type="submit" name="Balance">Enquire Balance</button>
 <br><br>
 </form>
 <form action="temp.html">
-<input type="submit" value="   Mini Statement   " >
+<!input type="submit" value="   Mini Statement   " >
+<button type="submit" name="Mini Statement">Mini Statement</button>
 <br><br>
 </form>
 <form action="atm4e.php">
-<input type="submit" value="     Change PIN     " >
+<!input type="submit" value="     Change PIN     " >
+<button type="submit" name="Change Pin">Change PIN</button>
 <br><br>
 </form>
 </div>

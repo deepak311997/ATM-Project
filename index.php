@@ -12,6 +12,12 @@ input[type=submit]
 	width: 25%;
 	color: white;
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
 </style>
 </head>
 <body>
@@ -20,7 +26,8 @@ input[type=submit]
 <br><br><br>
 <br><br><br>
 <form action="atm2.php">
-<input type="submit" value=" Continue to ATM ">
+<!input type="submit" value=" Continue to ATM " style="color: white">
+<button type="submit" name="Continue to ATM">Continue to ATM</button>
 </div>
 </form>
 </div>

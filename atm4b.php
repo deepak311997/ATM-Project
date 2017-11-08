@@ -15,6 +15,12 @@ input[type=submit]
 	width: 20%;
 	color: white
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
 </style>	
 </head>
 <body>
@@ -27,7 +33,8 @@ input[type=submit]
   <input id="amount" type="number" placeholder="Amount" >
   <br>
   <br>
-  <input type="submit" value="Deposit" onclick="IDGeneratordep(100000,999999)">
+  <!input type="submit" value="Deposit" onclick="IDGeneratordep(100000,999999)">
+  <button type="submit" value="Deposit" onclick="IDGeneratorwith(100000,999999)">Deposit</button>
   <br>
   <br>
  </form> 

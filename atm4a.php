@@ -15,6 +15,12 @@ input[type=submit]
 	width: 15%;
 	color: white
 }
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
 </style>
 </head>
 <body>
@@ -27,7 +33,8 @@ input[type=submit]
   <input id="amount" type="number" placeholder="Amount" >
   <br>
   <br>
-  <input type="submit" value='Withdraw' onclick="IDGeneratorwith(100000,999999)">
+  <!input type="submit" value='Withdraw' onclick="IDGeneratorwith(100000,999999)">
+  <button type="submit" onclick="IDGeneratorwith(100000,999999)">Withdraw</button>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>
