@@ -3,8 +3,10 @@
 ?>
 <html>
 <head>
+	<title>BALANCE ENQUIRY</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 </head>
 <body>
 <?php
@@ -14,4 +16,5 @@
 	echo "The Current Account Balance is " . result . ".<br>";	
 ?>	
 </body>
+<footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>

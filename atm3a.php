@@ -1,9 +1,10 @@
 <!--authentication successful-->
 <html>
 <head>
-	<title>OPTIONS</title>
+	<title>ATM MENU</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
 input[type=submit]
 {
@@ -17,7 +18,7 @@ input[type=submit]
 </head>
 <body>
 <div align="center">	
-<img src="logo.png" alt="State Bank of India" width=800px height=150px>
+<img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
 <h4>Select any one from the options below</h4>
@@ -43,5 +44,5 @@ input[type=submit]
 </form>
 </div>
 </body>
-<footer><b>Copyrights &copy; State Bank of India 2018</b></footer>
+<footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>

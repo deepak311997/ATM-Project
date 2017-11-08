@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>DEPOSIT MONEY</title>
 	<script type='text/javascript' src='IDGen.js'></script>
 	<title>Deposit Form</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
 input[type=submit]
 {
@@ -17,7 +19,7 @@ input[type=submit]
 </head>
 <body>
 <div align="center">
-<img src="logo.png" alt="State Bank of India" width=800px height=150px>
+<img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
 <form action="index.php">
@@ -30,5 +32,5 @@ input[type=submit]
   <br>
  </form> 
 </body>
-<footer><b>Copyrights &copy; State Bank of India 2018</b></footer>
+<footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>

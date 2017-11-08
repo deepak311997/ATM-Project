@@ -9,19 +9,16 @@
 	$check=mysqli_query($conn,"select * from account_details where acc_no='$username' and atm_pin='$password'");
 	if(mysqli_num_rows($check)!=0)
 	{
-<<<<<<< HEAD
-		echo '<script language="javascript">';
-		alert("Login Successful !!");
-		//echo 'alert("Login Successful !!");';
-		echo '</script>';
-		//$message = "wrong answer";
-		//echo "<script type='text/javascript'>alert('$message');</script>";
-=======
->>>>>>> 45ebef1cc7da6057805af8759395b888f9b8506a
 		header('Location:atm3a.php');
+		$message1 = "Login Successful!";
+		echo "<script type='text/javascript'>window.alert('$message1');</script>";
+	
 	}
 	else
 	{
 		header('Location:atm3b.php');
+		$message2 = "Wrong Username or Password!";
+		echo "<script type='text/javascript'>window.alert('$message2');</script>";
+	
 	}
 ?>
