@@ -8,10 +8,158 @@
 	create table account_details(c_id integer references customer(c_id) on delete cascade,acc_no integer,atm_pin integer,primary key(acc_no,c_id));
 	create table current_account(c_id integer primary key references customer(c_id) on delete cascade,current_balance integer);
 	create table saving_account(c_id integer primary key references customer(c_id) on delete cascade,saving_balance integer);
-	create table transaction(t_id integer,c_id integer references customer(c_id) on delete cascade,t_type varchar(10),primary key(t_id,c_id));
+	create table transaction(t_id integer,c_id integer references customer(c_id) on delete cascade,t_amount integer,t_type varchar(10),primary key(t_id,c_id));
 
 -Insertion of Data 
 	
+	banks
+		insert into banks values(001,"State Bank of India","Vidyaranyapura");
+		insert into banks values(002,"State Bank of India","Hebbal");
+		insert into banks values(003,"State Bank of India","New Bel");
+		insert into banks values(004,"State Bank of India","R.T Nagar");
+		insert into banks values(005,"State Bank of India","Malleshwaram");
+		insert into banks values(006,"State Bank of India","Indiranagar");
+		insert into banks values(007,"State Bank of India","M.G Road");
+		insert into banks values(008,"State Bank of India","Cunningham Road");
+		insert into banks values(009,"State Bank of India","Sahakarnagar");
+		insert into banks values(010,"State Bank of India","J.P Nagar");
+
+	atm
+		insert into atm values(001,"Vidyaranyapura");
+
+	customer
+		insert into customer values(001,001,"Deepak"," V","Vidyaranyapura",8147900416);
+		insert into customer values(002,001,"Shreyas"," Jain","Vidyaranyapura",9876589423);	
+		insert into customer values(003,001,"Akshay"," Harish","Vidyaranyapura",8157989416);	
+		insert into customer values(004,002,"Rishi"," Suresh","Hebbal",7896528965);	
+		insert into customer values(005,002,"Joeseph"," Daniel","Hebbal",9862485637);
+		insert into customer values(006,002,"Sudhanshu"," Yadhav","Hebbal",8189740416);	
+		insert into customer values(007,003,"Gautham"," N","New Bel",9875268941);	
+		insert into customer values(008,003,"Ronny"," Kashyap","New Bel",9856300416);	
+		insert into customer values(009,003,"Tanishk"," Sharma","New Bel",8147785429);	
+		insert into customer values(010,004,"Aisha"," Misbah","R.T Nagar",9886065863);	
+		insert into customer values(011,004,"Amulya"," V","R.T Nagar",9480232436);	
+		insert into customer values(012,004,"Chaitra"," V","R.T Nagar",9901220568);
+		insert into customer values(013,005,"Gagan"," Chand","Malleshwaram",8974562589);
+		insert into customer values(014,005,"Meghana"," A.N","Malleshwaram",958762568);
+		insert into customer values(015,005,"Latha"," A.V","Malleshwaram",9897520568);	
+		insert into customer values(016,006,"Kiran"," Gowda","Indiranagar",9901965716);
+		insert into customer values(017,006,"Krishna"," Changappa","Indiranagar",9985210568);
+		insert into customer values(018,006,"Puneth"," P","Indiranagar",9901658768);
+		insert into customer values(019,007,"Farheen"," Sheik","M.G Road",8976220568);
+		insert into customer values(020,007,"Talha"," Sheik","M.G Road",7327864568);
+		insert into customer values(021,007,"Saba"," Khan","M.G Road",8147930568);
+		insert into customer values(022,008,"Vinayak"," T","Cunningham Road",8145896568);
+		insert into customer values(023,008,"Priyanka"," Chopra","Cunningham Road",8698930568);
+		insert into customer values(024,008,"Deepika"," Padukone","Cunningham Road",9856130568);
+		insert into customer values(025,009,"Apeksha"," Mrutyunjay","Sahakarnagar",789620568);
+		insert into customer values(026,009,"Aaryan"," Kumar","Sahakarnagar",9542380568);
+		insert into customer values(027,009,"Sameen"," Adam","Sahakarnagar",9955610568);
+		insert into customer values(028,010,"Aiman"," Khan","J.P Nagar",8795330568);
+		insert into customer values(029,010,"Avinash"," Prakash","J.P Nagar",8147130568);
+		insert into customer values(030,010,"Divyanshu"," Gupta","J.P Nagar",9985777568);
+
+	account_details
+		
+		insert into account_details values(001,"client001",2017);
+		insert into account_details values(002,"client002",2017);
+		insert into account_details values(003,"client003",2017);
+		insert into account_details values(004,"client004",2017);
+		insert into account_details values(005,"client005",2017);
+		insert into account_details values(006,"client006",2017);
+		insert into account_details values(007,"client007",2017);
+		insert into account_details values(008,"client008",2017);
+		insert into account_details values(009,"client009",2017);
+		insert into account_details values(010,"client010",2017);
+		insert into account_details values(011,"client011",2017);
+		insert into account_details values(012,"client012",2017);
+		insert into account_details values(013,"client013",2017);
+		insert into account_details values(014,"client014",2017);
+		insert into account_details values(015,"client015",2017);
+		insert into account_details values(016,"client016",2017);
+		insert into account_details values(017,"client017",2017);
+		insert into account_details values(018,"client018",2017);
+		insert into account_details values(019,"client019",2017);
+		insert into account_details values(020,"client020",2017);
+		insert into account_details values(021,"client021",2017);
+		insert into account_details values(022,"client022",2017);
+		insert into account_details values(023,"client023",2017);
+		insert into account_details values(024,"client024",2017);
+		insert into account_details values(025,"client025",2017);
+		insert into account_details values(026,"client026",2017);
+		insert into account_details values(027,"client027",2017);
+		insert into account_details values(028,"client028",2017);
+		insert into account_details values(029,"client029",2017);
+		insert into account_details values(030,"client030",2017);
+
+	current_account
+		
+		insert into current_account values(001,1000);
+		insert into current_account values(002,2000);
+		insert into current_account values(003,3000);
+		insert into current_account values(004,4000);
+		insert into current_account values(005,5000);
+		insert into current_account values(006,6000);
+		insert into current_account values(007,7000);
+		insert into current_account values(008,8000);
+		insert into current_account values(009,9000);
+		insert into current_account values(010,10000);
+		insert into current_account values(011,11000);
+		insert into current_account values(012,12000);
+		insert into current_account values(013,13000);
+		insert into current_account values(014,14000);
+		insert into current_account values(015,15000);
+		insert into current_account values(016,16000);
+		insert into current_account values(017,17000);
+		insert into current_account values(018,18000);
+		insert into current_account values(019,19000);
+		insert into current_account values(020,20000);
+		insert into current_account values(021,21000);
+		insert into current_account values(022,22000);
+		insert into current_account values(023,23000);
+		insert into current_account values(024,24000);
+		insert into current_account values(025,25000);
+		insert into current_account values(026,26000);
+		insert into current_account values(027,27000);
+		insert into current_account values(028,28000);
+		insert into current_account values(029,29000);
+		insert into current_account values(030,30000);
+
+	saving_account
+
+		insert into saving_account values(001,1000);
+		insert into saving_account values(002,2000);
+		insert into saving_account values(003,3000);
+		insert into saving_account values(004,4000);
+		insert into saving_account values(005,5000);
+		insert into saving_account values(006,6000);
+		insert into saving_account values(007,7000);
+		insert into saving_account values(008,8000);
+		insert into saving_account values(009,9000);
+		insert into saving_account values(010,10000);
+		insert into saving_account values(011,11000);
+		insert into saving_account values(012,12000);
+		insert into saving_account values(013,13000);
+		insert into saving_account values(014,14000);
+		insert into saving_account values(015,15000);
+		insert into saving_account values(016,16000);
+		insert into saving_account values(017,17000);
+		insert into saving_account values(018,18000);
+		insert into saving_account values(019,19000);
+		insert into saving_account values(020,20000);
+		insert into saving_account values(021,21000);
+		insert into saving_account values(022,22000);
+		insert into saving_account values(023,23000);
+		insert into saving_account values(024,24000);
+		insert into saving_account values(025,25000);
+		insert into saving_account values(026,26000);
+		insert into saving_account values(027,27000);
+		insert into saving_account values(028,28000);
+		insert into saving_account values(029,29000);
+		insert into saving_account values(030,30000);
+
+
+
 	
 
 	
