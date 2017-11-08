@@ -29,27 +29,22 @@ button {
 <br>
 <h4>Select any one from the options below</h4>
 <form action="atmactw.php">
-<!input type="submit" value="Withdraw Cash" >
 <button type="submit" name="Withdraw">Withdraw Cash</button>
 <br><br>
 </form>
 <form action="atmactd.php">
-<!input type="submit" value="   Deposit Cash   " >
 <button type="submit" name="Deposit">Deposit Cash</button>
 <br><br>
 </form>
 <form action="atm4c.php">
-<!input type="submit" value="  Enquire Balance   " >
 <button type="submit" name="Balance">Enquire Balance</button>
 <br><br>
 </form>
 <form action="temp.html">
-<!input type="submit" value="   Mini Statement   " >
 <button type="submit" name="Mini Statement">Mini Statement</button>
 <br><br>
 </form>
 <form action="atm4e.php">
-<!input type="submit" value="     Change PIN     " >
 <button type="submit" name="Change Pin">Change PIN</button>
 <br><br>
 </form>
