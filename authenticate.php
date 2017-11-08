@@ -4,7 +4,8 @@
 	if($username=="admin"&&$password=="1234")
 	{
 		echo '<script language="javascript">';
-		echo 'alert("Login Successful !!");';
+		alert("Login Successful !!");
+		//echo 'alert("Login Successful !!");';
 		echo '</script>';
 		//$message = "wrong answer";
 		//echo "<script type='text/javascript'>alert('$message');</script>";
