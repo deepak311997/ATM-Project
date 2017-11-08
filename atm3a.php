@@ -29,7 +29,7 @@ input[type=submit]
 <input type="submit" value="   Deposit Cash   " >
 <br><br>
 </form>
-<form action="temp.html">
+<form action="atm4c.php">
 <input type="submit" value="  Enquire Balance   " >
 <br><br>
 </form>
