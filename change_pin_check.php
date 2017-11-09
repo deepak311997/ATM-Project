@@ -1,9 +1,9 @@
 <?php
 	session_start();
-	$loginpin=$_SESSION[db_pass];
-	$oldpin=$_POST[oldpin];
-	$pin=$_POST[pin];
-	$repin=$_POST[pin1];
+	$loginpin=$_SESSION['db_pass'];
+	$oldpin=$_POST['oldpin'];
+	$pin=$_POST['pin'];
+	$repin=$_POST['pin1'];
 	$conn=mysqli_connect('localhost','root','','atm');
 	if($pin==$repin&&$loginpin==$oldpin)
 	{	
