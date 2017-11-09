@@ -20,12 +20,12 @@ button {
 <br>
 <br>
 <h1 align="center">Select Account Type </h1>
-<form action="atm4a.php">
+<form action="atm4cs.php">
 <button type="submit" name="Savings">Savings Account</button>
 <br>
 <br>
 </form>
-<form action="atm4a.php">
+<form action="atm4cc.php">
 <button type="submit" name="Current">Current Account</button>
 <br>
 <br>

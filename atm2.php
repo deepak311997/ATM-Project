@@ -29,7 +29,6 @@ button
  <input name="password" type="password" placeholder="Enter ATM Pin" >
   <br><br>
 <button type="submit">Login</button>
-<p><b>Account No:admin<br>ATM Pin:1234</b></p>
 </form>
 </div>
 </body>

@@ -33,8 +33,7 @@ button {
   <input id="amount" type="number" placeholder="Amount" >
   <br>
   <br>
-  <!input type="submit" value='Withdraw' onclick="IDGeneratorwith(100000,999999)">
-  <button type="submit" onclick="IDGeneratorwith(100000,999999)">Withdraw</button>
+  <button type="submit" onclick="IDGeneratorwith(10000000,99999999)">Withdraw</button>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>

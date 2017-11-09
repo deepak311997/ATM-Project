@@ -6,14 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-input[type=submit]
-{
-	background-color:gray;
-	width: 17%;
-	color: white;
-	width: 13em;
-	height: 2em;
-}
 button {
   color: #000000;
   font-weight: bold;
@@ -36,7 +28,7 @@ button {
 <button type="submit" name="Deposit">Deposit Cash</button>
 <br><br>
 </form>
-<form action="atm4c.php">
+<form action="atmacbs.php">
 <button type="submit" name="Balance">Enquire Balance</button>
 <br><br>
 </form>
