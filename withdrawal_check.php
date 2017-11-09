@@ -6,10 +6,6 @@
 
 	}
 </script>
-
-
-
-
 <?php 
 	session_start();
 	$conn=mysqli_connect('localhost','root','','atm');
@@ -18,13 +14,14 @@
 	$result=mysqli_query($conn,$sql);
 	if (mysqli_num_rows('$result') > 0) {
     // output data of each row
-    while($row = mysqli_fetch_assoc($result)) 
+    while($row=mysqli_fetch_assoc($result)) 
     {
-		 		if ($row["saving_balance"]>=$amt) 
+		 		if ($row["saving_balance"]>=$amt)
 		 		{
+		 			echo "HIII";
 		 			$actamt=$row["saving_balance"]-$amt;
 		 			$sql="update saving_account set saving_balance =$actamt WHERE c_id=select c_id from account_details where acc_no='$_SESSION[db_usr]'";
-		 			echo "HIII";
+		 			
 		 		}
 				/*else
 				{

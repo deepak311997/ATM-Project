@@ -21,9 +21,9 @@ button {
 <img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
-<form action="withdrawal_check.php" method="POST">
+<form method="POST" action="withdrawal_check.php">
 <label>Withdrawal Amount :</label>
-  <input name="amount" type="number" placeholder="Amount" >
+  <input name="amount" value="amount" type="number" placeholder="Amount" >
   <br>
   <br>
   <button type="submit">Withdraw</button>
