@@ -1,20 +1,13 @@
 <!--deposit cash-->
-<!DOCTYPE html>
 <html>
 <head>
 	<title>DEPOSIT MONEY</title>
 	<script type='text/javascript' src='IDGen.js'></script>
-	<title>Deposit Form</title>
+    <title>Deposit Form</title>
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-input[type=submit]
-{
-	background-color:gray;
-	width: 20%;
-	color: white
-}
 button {
   color: #000000;
   font-weight: bold;
@@ -28,7 +21,7 @@ button {
 <img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
-<form action="deposit_check_current.php">
+<form method="POST" action="deposit_check_current.php">
 <label>Deposit Amount :</label>
   <input name="amount" value="amount" type="number" placeholder="Amount" >
   <br>
