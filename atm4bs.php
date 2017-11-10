@@ -1,27 +1,42 @@
-<script>
-		function IDGeneratorwith(min,max)
-	{
-		var refid=Math.floor(Math.random() * (max - min + 1) + min);
-		alert("Withdrawal Successfull your Transaction id is "+refid+"\nThank You for banking with us");
-
-	}
-</script>
-<?php 
- 	session_start();
-	$conn=mysqli_connect('localhost','root','','atm');
-	$amt=$_POST['amount'];
-	$sql="select saving_balance from saving_account where c_id=(select c_id from account_details where acc_no='$_SESSION[db_usr]');";
-	$result=mysqli_query($conn,$sql);
-	if (mysqli_num_rows($result)>0) 
-	{
-		while($row=mysqli_fetch_assoc($result)) 
-		{
-		 		$actamt=$row["saving_balance"]+$amt;
-		 		$sql1="update saving_account set saving_balance =$actamt WHERE c_id=(select c_id from account_details where acc_no='$_SESSION[db_usr]')";
-		 		mysqli_query($conn,$sql1);
-		 		echo '<script language="javascript">';
-				echo 'alert("Thank you for banking with us !!");window.location="index.php"';
-				echo '</script>';
-    	}
-	} 
- ?>
+<!--deposit cash-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEPOSIT MONEY</title>
+	<script type='text/javascript' src='IDGen.js'></script>
+	<title>Deposit Form</title>
+	<link rel="stylesheet" type="text/css" href="uitheme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
+<style>
+input[type=submit]
+{
+	background-color:gray;
+	width: 20%;
+	color: white
+}
+button {
+  color: #000000;
+  font-weight: bold;
+  width: 15em;
+  height: 2em;
+}
+</style>	
+</head>
+<body>
+<div align="center">
+<img src="mylogo.png" alt="State Bank of India">
+<br>
+<br>
+<form action="deposit_check_savings.php">
+<label>Deposit Amount :</label>
+  <input name="amount" value="amount" type="number" placeholder="Amount" >
+  <br>
+  <br>
+  <button type="submit" >Deposit</button>
+  <br>
+  <br>
+ </form> 
+</body>
+<footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
+</html>
