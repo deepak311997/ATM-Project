@@ -27,6 +27,13 @@ button {
   <br>
   <br>
   <button type="submit">Withdraw</button>
+</form>
+</div>
+<div align="center">
+<form action="index.php">
+<button type="submit" style="background-color: #EC1111; width: 05em; height: 2em;"">Cancel</button>
+</form>
+</div>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>

@@ -13,6 +13,11 @@ button
 	height: 2em;
 	color: #000000;
 }
+#abc
+{
+	background-color: #EC1111;
+	 margin-left:640px;
+}
 </style>
 </head>
 <body>
@@ -29,8 +34,13 @@ button
  <input name="password" type="password" placeholder="Enter ATM Pin" >
   <br><br>
 <button type="submit">Login</button>
+<br>
+<br>
 </form>
 </div>
+<form action="index.php">
+<button id= "abc" type="submit" style="width: 05em; height: 2em;">Cancel</button>
+</form>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html> 
