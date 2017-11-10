@@ -1,15 +1,9 @@
-<script>
-		function IDGeneratorwith(min,max)
-	{
-		var refid=Math.floor(Math.random() * (max - min + 1) + min);
-		alert("Withdrawal Successfull your Transaction id is "+refid+"\nThank You for banking with us");
-
-	}
-</script>
 <?php 
  	session_start();
 	$conn=mysqli_connect('localhost','root','','atm');
 	$amt=$_POST['amount'];
+	$time=date("H:i:s");
+	$date=date("Y/m/d");
 	$sql="select saving_balance from saving_account where c_id=(select c_id from account_details where acc_no='$_SESSION[db_usr]');";
 	$result=mysqli_query($conn,$sql);
 	if($amt==0)
@@ -26,11 +20,14 @@
 			{
 				if ($row["saving_balance"]>=$amt)
 		 		{
+		 			$t_id=rand(0000000,9999999);
 		 			$actamt=$row["saving_balance"]-$amt;
 		 			$sql1="update saving_account set saving_balance =$actamt WHERE c_id=(select c_id from account_details where acc_no='$_SESSION[db_usr]')";
+		 			$sql2="insert into transaction values('$date','$time',$t_id,'$_SESSION[db_usr]','Savings',$amt,$actamt,'Debit')";
 		 			mysqli_query($conn,$sql1);
+		 			mysqli_query($conn,$sql2);
 		 			echo '<script language="javascript">';
-					echo 'alert("Thank you for banking with us !!");window.location="index.php"';
+					echo 'alert("Thank you for banking with us!!\n\nYour Transaction Number is "+"'.$t_id.'");window.location="index.php"';
 					echo '</script>';	
 		 		}
 		 		else
@@ -47,5 +44,5 @@
 		echo '<script language="javascript">';
 		echo 'alert("Please Enter the amount in multiples of 100!!");window.location="atm4as.php"';
 		echo '</script>';
-	}	 
+	}	
  ?>

@@ -31,7 +31,7 @@ button {
 <button type="submit" name="Balance">Enquire Balance</button>
 <br><br>
 </form>
-<form action="temp.html">
+<form action="transaction.php">
 <button type="submit" name="Mini Statement">Mini Statement</button>
 <br><br>
 </form>
