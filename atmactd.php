@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>ACCOUNT TYPE</title>
@@ -20,7 +19,7 @@ button {
 <img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
-<h1 align="center">Select Account Type </h1>
+<h1 align="center">Select Account Type</h1>
 <form action="atm4bs.php">
 <button type="submit" name="Savings">Savings Account</button>
 <br>

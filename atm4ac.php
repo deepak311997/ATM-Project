@@ -21,9 +21,10 @@ button {
 <img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
+<h2>Please Enter the amount that you wish to Withdraw</h2>
 <form method="POST" action="withdrawal_check_current.php">
 <label>Withdrawal Amount :</label>
-  <input name="amount" value="amount" type="number" placeholder="Amount" >
+  <input name="amount" type="number" placeholder="Amount" >
   <br>
   <br>
   <button type="submit">Withdraw</button>

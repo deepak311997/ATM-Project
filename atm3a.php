@@ -18,8 +18,7 @@ button {
 <div align="center">	
 <img src="mylogo.png" alt="State Bank of India">
 <br>
-<br>
-<h4>Select any one from the options below</h4>
+<h2>Select any one from the options below</h2>
 <form action="atmactw.php">
 <button type="submit" name="Withdraw">Withdraw Cash</button>
 <br><br>

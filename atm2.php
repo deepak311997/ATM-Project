@@ -25,6 +25,8 @@ button
 <img src="mylogo.png"></body>
 <br>
 <br>
+<h2>Please enter your Account Details below</h2>
+<br>
 <form action="authenticate.php" method="POST" class="box">
 <label>Enter Account Number:</label><br>
   <input name="username" type="text" placeholder="Enter Account number" >

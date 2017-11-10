@@ -21,6 +21,7 @@ button {
 <img src="mylogo.png" alt="State Bank of India">
 <br>
 <br>
+<h2>Please Enter the Amount that you wish to deposit</h2>
 <form method="POST" action="deposit_check_savings.php">
 <label>Deposit Amount :</label>
   <input name="amount" value="amount" type="number" placeholder="Amount" >

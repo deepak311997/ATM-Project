@@ -18,7 +18,9 @@ button {
 <div align="center">
 <img src="mylogo.png" alt="State Bank of India" >
 <br><br><br>
-<br><br><br>
+<h1>Welcome to Students Bank Limited! </h1>
+<h2>Please click below to proceed to Log in to your account</h2>
+<br>
 <form action="atm2.php">
 <button type="submit" name="Continue to ATM">Continue to ATM</button>
 </div>
@@ -27,3 +29,4 @@ button {
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>
+<!↴>
