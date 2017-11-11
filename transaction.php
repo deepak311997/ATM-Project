@@ -33,9 +33,8 @@
 }
 #abc
 {
-	color: white;
-	background-color: red;
-	 margin-left:640px;
+	color: black;
+	 margin-left:570px;
 }
 </style>
 </head>
@@ -80,14 +79,14 @@ $result=mysqli_query($conn,$sql);
 			}
 			echo "</table><"."<br>";
 			echo "<form action='index.php'>
-				<button id= 'abc' type='submit' style='width: 05em; height: 2em;'>Cancel</button>
+				<button id= 'abc' type='submit' style='width: 13em; height: 2em;'>Click here to go back</button>
 				</form>";
 		}
 		else
 		{
 			echo "<div align='center' style='margin-top:110px;'><h2><i>There are No Recent Transactions !!</i></h2></div>";
 			echo "<form action='index.php'>
-				<button id= 'abc' type='submit' style='width: 05em; height: 2em;'>Cancel</button>
+				<button id= 'abc' type='submit' style='width: 13em; height: 2em;'>Click here to go back</button>
 					</form>";
 		}
 ?>

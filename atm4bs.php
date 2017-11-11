@@ -11,7 +11,7 @@
 button {
   color: #000000;
   font-weight: bold;
-  width: 15em;
+  width: 08em;
   height: 2em;
 }
 </style>	

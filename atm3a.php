@@ -9,7 +9,7 @@
 button {
   color: #000000;
   font-weight: bold;
-  width: 15em;
+  width: 11em;
   height: 2em;
 }
 </style>

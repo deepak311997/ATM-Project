@@ -16,7 +16,7 @@
 	else
 	{
 		echo '<script language="javascript">';
-		echo 'alert("Login Unsuccessful !! Wrong Credentials ");window.location="atm3b.php"';
+		echo 'window.location="atm3b.php"';
 		echo '</script>';
 	}
 ?>
