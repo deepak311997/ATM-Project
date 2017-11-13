@@ -1,9 +1,12 @@
 <?php 
  	session_start();
+ 	date_default_timezone_set("Asia/Calcutta");
  	$time=date("H:i:s");
 	$date=date("Y/m/d");
 	$conn=mysqli_connect('localhost','root','','atm');
 	$amt=$_POST['amount'];
+	$tid=mysqli_query($conn,"select * from transaction_id");
+	$val=mysqli_fetch_assoc($tid);
 	if($amt==0)
 	{
 		echo '<script language="javascript">';
@@ -18,14 +21,17 @@
 		{
 			while($row=mysqli_fetch_assoc($result)) 
 			{
-		 		$t_id=rand(0000000,9999999);
+		 		$trans=$val["t_id"];
+		 		++$trans;
 		 		$actamt=$row["saving_balance"]+$amt;
 		 		$sql1="update saving_account set saving_balance =$actamt WHERE c_id=(select c_id from account_details where acc_no='$_SESSION[db_usr]')";
-		 		$sql2="insert into transaction values('$date','$time',$t_id,'$_SESSION[db_usr]','Savings',$amt,$actamt,'Credit')";
+		 		$sql2="insert into transaction values('$date','$time',$trans,'$_SESSION[db_usr]','Savings',$amt,$actamt,'Credit')";
+		 		$sql3="update transaction_id set t_id=$trans";
 		 		mysqli_query($conn,$sql1);
 		 		mysqli_query($conn,$sql2);
+		 		mysqli_query($conn,$sql3);
 		 		echo '<script language="javascript">';
-				echo 'alert("Thank you for banking with us!!\n\nYour Transaction Number is "+"'.$t_id.'");window.location="index.php"';
+				echo 'alert("Thank you for banking with us!!\n\nYour Transaction Number is "+"'.$trans.'");window.location="index.php"';
 				echo '</script>';
     		}
 		}

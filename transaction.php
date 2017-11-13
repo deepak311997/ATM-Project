@@ -77,7 +77,7 @@ $result=mysqli_query($conn,$sql);
 					$i++;
 				}
 			}
-			echo "</table><"."<br>";
+			echo "</table>"."<br>";
 			echo "<form action='index.php'>
 				<button id= 'abc' type='submit' style='width: 13em; height: 2em;'>Click here to go back</button>
 				</form>";
