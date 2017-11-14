@@ -8,11 +8,27 @@
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-button {
-  color: #000000;
-  font-weight: bold;
+button 
+{
   width: 13em;
   height: 2em;
+  display: inline-block;
+  text-decoration: none;
+  color:  #fff;
+  background-color: #4CAF50;
+  box-shadow: 9px;
+  cursor: pointer;
+}
+button:active
+{
+  background-color: #3e8e41;
+  box-shadow: 5px;
+  transform: translateY(4px);
+}
+ button:hover 
+{
+  background-color: #3e8e41;
+  box-shadow: 9px;
 }
 </style>
 </head>

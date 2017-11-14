@@ -13,11 +13,47 @@ input[type=submit]
 	width: 15%;
 	color: white;
 }
-button {
-  color: #000000;
-  font-weight: bold;
+button 
+{
+ 
   width: 11em;
   height: 2em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color:  #fff;
+  background-color: #4CAF50;
+  box-shadow: 9px;
+  cursor: pointer;
+}
+button:active
+{
+  background-color: #3e8e41;
+  box-shadow: 5px;
+  transform: translateY(4px);
+}
+ button:hover 
+{
+  background-color: #3e8e41;
+  box-shadow: 9px;
+}
+#abc
+{
+  background-color: #ff0000;
+  box-shadow: rgb(255,0,0), hsl(0,100%,50%);
+  cursor: pointer;
+  width: 05em;
+  height: 2em;
+}
+#abc:hover
+{
+  background-color: #cc0000;
+}
+#abc:active
+{
+  background-color: #cc0000;
+  box-shadow: 5px;
+  transform: translateY(4px);
 }
 </style>
 </head>
@@ -40,6 +76,11 @@ button {
 	<br>
 	<br>
 </form>
+</div>
+<div align="center">
+	<form action="index.php">
+		<button id="abc" type="submit">Cancel</button>
+	</form>
 </div>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>

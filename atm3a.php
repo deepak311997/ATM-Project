@@ -6,11 +6,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-button {
-  color: #000000;
-  font-weight: bold;
+button 
+{
   width: 11em;
   height: 2em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color:  #fff;
+  background-color: #4CAF50;
+  box-shadow: 9px;
+  cursor: pointer;
+}
+button:active
+{
+	background-color: #3e8e41;
+  box-shadow: 5px;
+  transform: translateY(4px);
+}
+ button:hover 
+{
+	background-color: #3e8e41;
+	box-shadow: 9px;
+}
+#abc
+{
+	background-color: #ff0000;
+	box-shadow: rgb(255,0,0), hsl(0,100%,50%);
+	cursor: pointer;
+	width: 05em;
+	height: 2em;
+}
+#abc:hover
+{
+	background-color: #cc0000;
+}
+#abc:active
+{
+  background-color: #cc0000;
+  box-shadow: 5px;
+  transform: translateY(4px);
+
 }
 </style>
 </head>
@@ -42,7 +78,7 @@ button {
 </div>
 <div align="center">
 <form action="index.php">
-<button type="submit" style="background-color: #EC1111; width: 05em; height: 2em;">Cancel</button>
+<button id="abc" type="submit">Cancel</button>
 </form>
 </div>
 </body>

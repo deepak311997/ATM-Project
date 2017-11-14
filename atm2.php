@@ -6,17 +6,47 @@
 	<link rel="stylesheet" type="text/css" href="uitheme.css">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-button
+button 
 {
-	font-weight: bold;
-	width: 07em;
-	height: 2em;
-	color: #000000;
+  width: 07em;
+  height: 2em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color:  #fff;
+  background-color: #4CAF50;
+  box-shadow: 9px;
+  cursor: pointer;
+}
+button:active
+{
+	background-color: #3e8e41;
+  box-shadow: 5px;
+  transform: translateY(4px);
+}
+ button:hover 
+{
+	background-color: #3e8e41;
+	box-shadow: 9px;
 }
 #abc
 {
-	background-color: #EC1111;
-	 margin-left:640px;
+	background-color: #ff0000;
+	box-shadow: rgb(255,0,0), hsl(0,100%,50%);
+	cursor: pointer;
+	width: 05em;
+	height: 2em;
+}
+#abc:hover
+{
+	background-color: #cc0000;
+}
+#abc:active
+{
+  background-color: #cc0000;
+  box-shadow: 5px;
+  transform: translateY(4px);
+
 }
 </style>
 </head>
@@ -40,9 +70,11 @@ button
 <br>
 </form>
 </div>
+<div align="center">
 <form action="index.php">
-<button id= "abc" type="submit" style="width: 05em; height: 2em;">Cancel</button>
+<button id= "abc" type="submit">Cancel</button>
 </form>
+</div>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html> 

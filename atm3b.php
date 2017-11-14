@@ -7,11 +7,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
 <style>
-button {
-  color: #000000;
+button 
+{
   font-weight: bold;
-  width: 15em;
+  width: 11em;
   height: 2em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color:  #fff;
+  background-color: #4CAF50;
+  box-shadow: 9px;
+  cursor: pointer;
+}
+button:active
+{
+  background-color: #3e8e41;
+  box-shadow: 5px;
+  transform: translateY(4px);
+}
+ button:hover 
+{
+  background-color: #3e8e41;
+  box-shadow: 9px;
 }
 </style>
 </head>
