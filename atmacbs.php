@@ -7,33 +7,31 @@
 <style>
 button 
 {
+  font-weight: bold;
   width: 11em;
   height: 2em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color:  #fff;
-  background-color: #4CAF50;
-  box-shadow: 9px;
+  color:  #000000;
+  background-color: #ffffff;
   cursor: pointer;
 }
 button:active
 {
-  background-color: #3e8e41;
-  box-shadow: 5px;
+  background-color: #d9d9d9;
   transform: translateY(4px);
 }
  button:hover 
 {
-  background-color: #3e8e41;
-  box-shadow: 9px;
+  background-color: #d9d9d9;
 }
 #abc
 {
   background-color: #ff0000;
   box-shadow: rgb(255,0,0), hsl(0,100%,50%);
   cursor: pointer;
-  width: 05em;
+  width: 07em;
   height: 2em;
 }
 #abc:hover

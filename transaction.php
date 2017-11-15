@@ -21,8 +21,9 @@
 }
 
 #tab tr:nth-child(even){background-color: #f2f2f2;}
+#tab tr:nth-child(odd){background-color: #ddd }
 
-#tab tr:hover {background-color: #ddd;}
+/*#tab tr:hover {background-color: #ddd;}*/
 
 #tab th {
     padding-top: 12px;
@@ -33,8 +34,22 @@
 }
 #abc
 {
-	color: black;
-	 margin-left:570px;
+	color: #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+	width: 13em;
+	height: 2em;
+	margin-left: 590px;
+}
+#abc:hover
+{
+	background-color: #d9d9d9;
+}
+#abc:active
+{
+  background-color: #d9d9d9;
+  transform: translateY(4px);
+
 }
 </style>
 </head>
@@ -86,7 +101,7 @@ $result=mysqli_query($conn,$sql);
 		{
 			echo "<div align='center' style='margin-top:110px;'><h2><i>There are No Recent Transactions !!</i></h2></div>";
 			echo "<form action='index.php'>
-				<button id= 'abc' type='submit' style='width: 13em; height: 2em;'>Click here to go back</button>
+				<button id= 'abc' type='submit'>Click here to go back</button>
 					</form>";
 		}
 ?>

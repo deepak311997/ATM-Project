@@ -1,6 +1,10 @@
 body
 {
-	background-image:url(theme6.jpg);
+	background-image:url(theme7.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
 }
 footer
 {
