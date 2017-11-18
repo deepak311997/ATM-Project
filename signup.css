@@ -1,0 +1,22 @@
+.panel{
+	background-color: silver;
+	opacity: .9;
+	margin-top: 45px;
+	margin-left: 450px;
+	margin-right: 450px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	text-align: center;
+}
+.back{
+	padding-top: 15px;
+	padding-left:10px; 
+	padding-bottom:15px;
+	padding-right: 10px;
+	margin-left: 450px;
+	margin-right: 450px;
+	background-color: white;
+	opacity: .8;
+
+}

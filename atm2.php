@@ -72,6 +72,7 @@ button:active
 <form action="index.php">
 <button id= "abc" type="submit">Cancel</button>
 </form>
+<label><a href="signup.php">Don't have an account ?</a></label>
 </div>
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
