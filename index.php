@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="uitheme.css">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.min.css">
 <style>
 button 
 {
@@ -17,6 +18,7 @@ button
   color:#000000; 
   background-color: #ffffff;
   cursor: pointer;
+  border-radius: 8px;
 }
 button:hover 
 {
@@ -33,8 +35,9 @@ button:active
 <div align="center">
 <img src="mylogo.png" style="display: inline-block;" alt="State Bank of India" >
 <br><br><br>
-<h1 style="color:#004d26">Welcome to Students Bank Limited! </h1>
+<h1 style="color:#004d26">Welcome to Students Bank Limited!!!</h1>
 <h2 style="color:#004d26">Please click below to proceed to Log in to your account</h2>
+<i class="glyphicons glyphicons-user"></i>
 <br>
 <form action="atm2.php">
 <button type="submit" name="Continue to ATM">Continue to ATM</button>

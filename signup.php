@@ -19,6 +19,7 @@ button
   color:  #000000;
   background-color: #ffffff;
   cursor: pointer;
+  border-radius: 8px;
 }
 button:active
 {
@@ -54,20 +55,31 @@ button:active
 <div align="center">
 <img src="mylogo.png"></body>
 <br>
-<br>
 <div class="panel">
 <h2>Complete your Sign-up</h2>
 </div>
 <form class="back" action="signupintodb.php" method="POST">
-<label>Enter Bank Id : </label><input type="text" name="bid" placeholder="Bank Id"><br><br>
-<label>Enter Account No : </label><input type="text" name="acc" placeholder="Account Number"><br><br>
-<label>Enter First Name : </label><input type="text" name="fname" placeholder="First Name"><br><br>
-<label>Enter Last Name : </label><input type="text" name="lname" placeholder="Last Name"><br><br>
-<label>Enter Address : </label><input type="text" name="address" placeholder="Address"><br><br>
-<label>Enter Mobile No : </label><input type="text" name="phno" placeholder="Mobile Number"><br><br>
-<label>Enter Pin : </label><input type="Password" name="pass1" placeholder="Password"><br><br>
-<label>Re-enter Pin : </label><input type="Password" name="pass2" placeholder="Password"><br><br>
-<input type="submit" value="Signup"><br><br>
+<select name="bid" style="border-radius: 6px; font-size: 17px; width: 220px;">
+	<span class="glyphicon glyphicon-add-user"></span><option>Select Bank Id</option>
+	<option value="1">1-Vidyaranyapura</option>
+	<option value="2">2-Hebbal</option>
+	<option value="3">3-New Bel</option>
+	<option value="4">4-R.T Nagar</option>
+	<option value="5">5-Malleshwaram</option>
+	<option value="6">6-Indiranagar</option>
+	<option value="7">7-M.G Road</option>
+	<option value="8">8-Cunningham Road</option>
+	<option value="9">9-Sahakarnagar</option>
+	<option value="10">10-J.P Nagar</option>
+</select><br><br>
+<i class="glyphicons glyphicons-user-add"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="acc" placeholder="Account Number"><br><br>
+<i class="glyphicon glyphicon-cloud"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="fname" placeholder="First Name"><br><br>
+<i class="glyphicon glyphicon-cloud"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="lname" placeholder="Last Name"><br><br>
+<i class="glyphicon glyphicon-home"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="address" placeholder="Address"><br><br>
+<i class="glyphicon glyphicon-earphone"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="phno" placeholder="Mobile Number"><br><br>
+<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass1" placeholder="Password"><br><br>
+<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass2" placeholder="Confirm Password"><br><br>
+<input style="border-radius: 6px; font-size: 17px; background-color:  #33cc33;" type="submit" value="Signup"><br><br>
 </form>
 </div>
 </body>
