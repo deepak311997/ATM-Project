@@ -19,7 +19,6 @@ button
   color:  #000000;
   background-color: #ffffff;
   cursor: pointer;
-  border-radius: 8px;
 }
 button:active
 {
@@ -54,13 +53,12 @@ button:active
 <body>
 <div align="center">
 <img src="mylogo.png"></body>
-<br>
 <div class="panel">
 <h2>Complete your Sign-up</h2>
 </div>
 <form class="back" action="signupintodb.php" method="POST">
-<select name="bid" style="border-radius: 6px; font-size: 17px; width: 220px;">
-	<span class="glyphicon glyphicon-add-user"></span><option>Select Bank Id</option>
+<span class="glyphicon glyphicon-map-marker"></span> <select name="bid" style="border-radius: 6px; font-size: 17px; width: 220px;">
+	<option>Select Bank Branch</option>
 	<option value="1">1-Vidyaranyapura</option>
 	<option value="2">2-Hebbal</option>
 	<option value="3">3-New Bel</option>
@@ -72,15 +70,21 @@ button:active
 	<option value="9">9-Sahakarnagar</option>
 	<option value="10">10-J.P Nagar</option>
 </select><br><br>
-<i class="glyphicons glyphicons-user-add"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="acc" placeholder="Account Number"><br><br>
+<i class="glyphicon glyphicon-user"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="acc" placeholder="Account Number"><br><br>
 <i class="glyphicon glyphicon-cloud"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="fname" placeholder="First Name"><br><br>
 <i class="glyphicon glyphicon-cloud"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="lname" placeholder="Last Name"><br><br>
 <i class="glyphicon glyphicon-home"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="address" placeholder="Address"><br><br>
 <i class="glyphicon glyphicon-earphone"></i><input style="border-radius: 6px; font-size: 17px; " type="text" name="phno" placeholder="Mobile Number"><br><br>
-<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass1" placeholder="Password"><br><br>
-<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass2" placeholder="Confirm Password"><br><br>
-<input style="border-radius: 6px; font-size: 17px; background-color:  #33cc33;" type="submit" value="Signup"><br><br>
+<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass1" placeholder="PIN"><br><br>
+<i class="glyphicon glyphicon-lock"></i><input style="border-radius: 6px; font-size: 17px; " type="Password" name="pass2" placeholder="Confirm PIN"><br><br>
+<input style=" width: 5em; font-size: 17px; color: #000000; background-color:  #33cc33;" type="submit" value="Signup"><br><br>
 </form>
 </div>
+<form action="index.php">
+	<div align="center">
+<button id= "abc" type="submit">Cancel</button>
+</div>
+</form>
+<h5 style="text-align: center; font-weight: bold; color: #000000">Copyrights &copy; Students Bank Public Limited 2018</h5>
 </body>
 </html>

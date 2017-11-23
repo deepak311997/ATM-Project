@@ -18,7 +18,6 @@ button
   color:#000000; 
   background-color: #ffffff;
   cursor: pointer;
-  border-radius: 8px;
 }
 button:hover 
 {
@@ -35,8 +34,8 @@ button:active
 <div align="center">
 <img src="mylogo.png" style="display: inline-block;" alt="State Bank of India" >
 <br><br><br>
-<h1 style="color:#004d26">Welcome to Students Bank Limited!!!</h1>
-<h2 style="color:#004d26">Please click below to proceed to Log in to your account</h2>
+<h2 style="color:#004d26">Welcome to Students Bank Limited!!!</h1>
+<h3 style="color:#004d26">Please click below to proceed to Log in to your account</h2>
 <i class="glyphicons glyphicons-user"></i>
 <br>
 <form action="atm2.php">
@@ -47,4 +46,3 @@ button:active
 </body>
 <footer><b>Copyrights &copy; Students Bank Public Limited 2018</b></footer>
 </html>
-<!↴>
