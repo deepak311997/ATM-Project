@@ -17,7 +17,8 @@
 
 #tab td, #tab th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 6px;
+    text-align: center;
 }
 
 #tab tr:nth-child(even){background-color: #f2f2f2;}
@@ -28,7 +29,6 @@
 #tab th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: red;
     color: white;
 }
@@ -94,7 +94,7 @@ $result=mysqli_query($conn,$sql);
 			}
 			echo "</table>"."<br>";
 			echo "<form action='index.php'>
-				<button id= 'abc' type='submit' style='width: 13em; height: 2em;'>Click here to go back</button>
+				<button id= 'abc' type='submit' style='margin-left:520px;width: 13em; height: 2em;'>Click here to go back</button>
 				</form>";
 		}
 		else
