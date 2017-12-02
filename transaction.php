@@ -58,7 +58,7 @@
 <img src="mylogo.png" alt="State Bank of India"></div>
 <?php
 $conn=mysqli_connect('localhost','root','','atm');
-$sql="select * from transaction where acc_no='$_SESSION[db_usr]' order by time DESC";
+$sql="select * from transaction where acc_no='$_SESSION[db_usr]' order by t_id DESC";
 $result=mysqli_query($conn,$sql);
 		if (mysqli_num_rows($result)>0) 
 		{
@@ -94,13 +94,13 @@ $result=mysqli_query($conn,$sql);
 			}
 			echo "</table>"."<br>";
 			echo "<form action='index.php'>
-				<button id= 'abc' type='submit' style='margin-left:520px;width: 13em; height: 2em;'>Click here to go back</button>
+				<button id= 'abc' type='submit' style='margin-left:610px;width: 13em; height: 2em;'>Click here to go back</button>
 				</form>";
 		}
 		else
 		{
 			echo "<div align='center' style='margin-top:110px;'><h2><i>There are No Recent Transactions !!</i></h2></div>";
-			echo "<form action='index.php'>
+			echo "<form action='atm2.php'>
 				<button id= 'abc' type='submit'>Click here to go back</button>
 					</form>";
 		}

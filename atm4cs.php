@@ -49,7 +49,7 @@ button:active
     	}
 	} 
 ?>
-<form action="index.php">
+<form action="atm2.php">
 	<div align="center">
 		<button type="submit" value="Submit">Click here to go Back</button>
 	</div>

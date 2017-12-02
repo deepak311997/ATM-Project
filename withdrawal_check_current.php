@@ -39,7 +39,7 @@
 		 		else
 				{
 					echo '<script language="javascript">';
-					echo 'alert(" You have Insufficient funds in your account!!");window.location="index.php"';
+					echo 'alert(" You have Insufficient funds in your account!!");window.location="atm2.php"';
 					echo '</script>';
 				}
     		}

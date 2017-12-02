@@ -31,7 +31,7 @@
 		 		mysqli_query($conn,$sql2);
 		 		mysqli_query($conn,$sql3);
 		 		echo '<script language="javascript">';
-				echo 'alert("Thank you for banking with us!!\n\nYour Transaction Number is "+"'.$trans.'");window.location="index.php"';
+				echo 'alert("Thank you for banking with us!!\n\nYour Transaction Number is "+"'.$trans.'");window.location="atm2.php"';
 				echo '</script>';	
     		}
 		}

@@ -66,7 +66,7 @@ button:active
  </form> 
 </div>
 <div align="center">
-<form action="index.php">
+<form action="atm2.php">
 <button id="abc" type="submit">Cancel</button>
 </form>
 </div>
